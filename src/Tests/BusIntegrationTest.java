@@ -1,6 +1,4 @@
 
-import com.rmit.bus.model.Bus;
-import com.rmit.bus.repository.BusRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -54,7 +52,7 @@ class BusIntegrationTest {
         repo.add(sampleBus());
 
         Bus updated = new Bus("12345678", 40, 70.0, "Diesel");
-        assertTrue(repo.update(updated));
+        assertTrue(repo.update("12345678",updated));
 
         BusRepository reload = new BusRepository(file.toString());
         assertEquals(40, reload.retrieve("12345678").getCapacity());
