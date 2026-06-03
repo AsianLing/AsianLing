@@ -37,9 +37,10 @@ class BusIntegrationTest {
         Path file = tempDir.resolve("buses.txt");
         BusRepository repo = new BusRepository(file.toString());
 
-        Bus badBus = new Bus("12AB5678", 45, 80.0, "Diesel");
-
-        assertFalse(repo.add(badBus));
+        
+        assertThrows(IllegalArgumentException.class, () ->
+        repo.add(new Bus("12AB5678", 45, 80.0, "Diesel"))
+    );
         assertEquals(0, repo.count());
     }
 
