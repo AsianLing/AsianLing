@@ -1,7 +1,11 @@
+package test.java;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
+
+import main.java.Bus;
+import main.java.BusRepository;
 
 import java.nio.file.Path;
 
