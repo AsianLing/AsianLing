@@ -1,4 +1,4 @@
-test\java\BusIntegrationTest.class
-test\java\DriverIntegrationTest.class
-test\java\DriverTest.class
-test\java\BusTest.class
+BusTest.class
+DriverIntegrationTest.class
+DriverTest.class
+BusIntegrationTest.class
