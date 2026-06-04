@@ -1,5 +1,3 @@
-package main.java;
-
 public class Driver {
     
     private String driverID;

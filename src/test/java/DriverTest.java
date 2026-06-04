@@ -1,8 +1,4 @@
-package test.java;
 import org.junit.jupiter.api.Test;
-
-import main.java.Driver;
-import main.java.DriverRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
  

@@ -1,9 +1,4 @@
-package test.java;
 import org.junit.jupiter.api.Test;
-
-import main.java.Bus;
-import main.java.BusRepository;
-import main.java.Driver;
 
 import static org.junit.jupiter.api.Assertions.*;
 
