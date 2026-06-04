@@ -213,6 +213,6 @@ public class DriverTest {
                 "5|Park Ave|Sydney|NSW|Australia", "20-01-1992"));
         assertEquals("John", repo.retrieve("56xy!#abAB").getName());
         assertEquals("Jane", repo.retrieve("78ab@#cdEF").getName());
-        repo.clear();
+        //repo.clear(); display test data for manual verification
     }
 }

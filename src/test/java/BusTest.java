@@ -91,7 +91,7 @@ public class BusTest {
         repo.add(new Bus(VALID_ID, 40, 80.0, "Diesel"));
         assertDoesNotThrow(() ->
                 repo.update(VALID_ID, new Bus(VALID_ID, 40, 60.0, "Diesel")));
-        repo.clear();
+        //repo.clear(); display test data for manual verification
     }
 
     // B3: Driver Age Restriction
