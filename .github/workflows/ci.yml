@@ -24,16 +24,16 @@ jobs:
           distribution: "temurin"
           cache: maven 
  
-      # ── Maven ──────────────────────────────────────────────────────────────
+      # Maven
       - name: Build and test (Maven)
         run: mvn --batch-mode verify
 
  
       - name: Upload test reports
-        if: always()   # upload even when tests fail so you can inspect results
+        if: always()   # upload even when tests fail to inspect results
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
-          # Maven path — change to build/reports/tests/test if using Gradle
+          # Maven path
           path: target/surefire-reports/
           retention-days: 14
